@@ -1,0 +1,29 @@
+(1)
+import numpy as np
+def compare(str1,str2):
+    temp = []
+    temp = np.isin(str1,str2)
+    ls1 = []
+    ls2 = []
+
+    for i in temp:
+        if temp[i] == True:
+            ls1.append(str1[i])
+        else:
+            ls2.append(str1[i])
+            ls2.append(str2[i])
+
+    print(ls1 + "\n")
+    print(ls2)
+
+str1 = "Refer"
+str2 = "Rafael"
+compare(str1,str2)
+
+(2)
+def reversed(str1):
+    a = len(str1)
+    print(str1[a::-1])
+       
+str1 = input("Enter a string: ")
+reversed(str1)
